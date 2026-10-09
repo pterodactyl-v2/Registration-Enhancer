@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Registration Enhancer</title>
+  <desc id="desc">Modern abstract banner for Registration Enhancer, a Pterodactyl v2.0 extension.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.52" stop-color="#171a38"/>
+      <stop offset="1" stop-color="#22265b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="320" rx="28" fill="url(#bg)"/>
+  <circle cx="1020" cy="72" r="240" fill="url(#glow)"/>
+  <circle cx="1100" cy="280" r="180" fill="url(#glow)"/>
+  <g fill="none" stroke="#a5b4fc" stroke-opacity=".16">
+    <path d="M760 0 L1060 320 M830 0 L1130 320 M900 0 L1200 300"/>
+    <circle cx="1000" cy="160" r="115"/>
+    <circle cx="1000" cy="160" r="82"/>
+  </g>
+  <g transform="translate(88 86)">
+    <rect width="96" height="96" rx="26" fill="url(#accent)"/>
+    <path d="M27 31h42a8 8 0 0 1 8 8v27a8 8 0 0 1-8 8H27a8 8 0 0 1-8-8V39a8 8 0 0 1 8-8Z" fill="#fff" fill-opacity=".96"/>
+    <circle cx="38" cy="48" r="4" fill="#312e81"/>
+    <circle cx="58" cy="48" r="4" fill="#312e81"/>
+    <path d="M36 60q11 10 24 0" fill="none" stroke="#312e81" stroke-width="4" stroke-linecap="round"/>
+    <path d="M48 18v-8m-7 4h14" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="220" y="126" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="43" font-weight="750" letter-spacing="-1">Registration Enhancer</text>
+  <text x="222" y="169" fill="#c7d2fe" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="450">A better registration experience for Pterodactyl v2.0</text>
+  <rect x="222" y="202" width="196" height="34" rx="17" fill="#ffffff" fill-opacity=".09" stroke="#a5b4fc" stroke-opacity=".35"/>
+  <circle cx="241" cy="219" r="5" fill="#34d399"/>
+  <text x="255" y="224" fill="#e0e7ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">THEME · CAPTCHA · UX</text>
+  <g transform="translate(950 112)">
+    <rect width="106" height="86" rx="18" fill="#ffffff" fill-opacity=".06" stroke="#a5b4fc" stroke-opacity=".25"/>
+    <rect x="18" y="17" width="70" height="52" rx="9" fill="#0f172a" stroke="#818cf8" stroke-opacity=".8"/>
+    <path d="M30 30h45M30 40h30M30 50h38M30 59h22" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
