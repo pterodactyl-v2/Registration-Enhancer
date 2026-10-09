@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a reproducible problem with Registration Enhancer.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Search existing issues first. Remove secrets and private user data from logs and screenshots."
+  - type: input
+    id: extension-version
+    attributes:
+      label: Extension version
+      placeholder: "Release tag or commit"
+    validations:
+      required: true
+  - type: input
+    id: panel-version
+    attributes:
+      label: Pterodactyl Panel version/build
+      placeholder: "Exact version or commit"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Registration page
+        - Registration popup
+        - Login page
+        - CAPTCHA
+        - Theme / appearance
+        - Update notifications
+        - Installation / upgrade
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs / screenshots
+      description: "Remove passwords, API keys, CAPTCHA secrets, cookies, and private data."
+    validations:
+      required: false

@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest a focused improvement or new capability.
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: "What limitation or user need does this address?"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: "Describe the behavior you would like."
+    validations:
+      required: true
+  - type: dropdown
+    id: default
+    attributes:
+      label: Preferred default behavior
+      options:
+        - Enabled by default
+        - Disabled by default
+        - Configurable by administrators
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false

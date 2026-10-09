@@ -1,0 +1,27 @@
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+config.local.*
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+.cache/
+
+# Package/build artifacts (publish release assets separately)
+*.pteroext
+dist/
+build/
