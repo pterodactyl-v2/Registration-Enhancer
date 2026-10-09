@@ -2,69 +2,77 @@
 
 # ✨ Registration Enhancer
 
-**A modern, configurable registration experience for Pterodactyl Panel 2.0.**
+**A modern, customizable registration experience for Pterodactyl Panel 2.0.**
 
-[![Pterodactyl Panel 2.0](https://img.shields.io/badge/Pterodactyl-Panel%202.0-3b82f6?style=for-the-badge)](https://github.com/pterodactyl/panel)
-[![GitHub release](https://img.shields.io/github/v/release/pterodactyl-v2/Registration-Enhancer?style=for-the-badge&label=latest%20release)](https://github.com/pterodactyl-v2/Registration-Enhancer/releases)
-[![GitHub issues](https://img.shields.io/github/issues/pterodactyl-v2/Registration-Enhancer?style=flat-square)](https://github.com/pterodactyl-v2/Registration-Enhancer/issues)
+[![Pterodactyl Panel 2.0](https://img.shields.io/badge/Pterodactyl-Panel%202.0-3B82F6?style=for-the-badge&logo=pterodactyl&logoColor=white)](https://github.com/pterodactyl/panel)
+[![Latest Release](https://img.shields.io/github/v/release/pterodactyl-v2/Registration-Enhancer?style=for-the-badge&label=release)](https://github.com/pterodactyl-v2/Registration-Enhancer/releases)
+[![Issues](https://img.shields.io/github/issues/pterodactyl-v2/Registration-Enhancer?style=flat-square)](https://github.com/pterodactyl-v2/Registration-Enhancer/issues)
 [![License](https://img.shields.io/badge/license-not%20published-lightgrey?style=flat-square)](#-license)
 
-[Features](#-features) · [Screenshots](#-screenshots) · [Installation](#-installation) · [Cache clearing](#-cache-clearing) · [Support](#-support)
+[Features](#-features) · [Preview](#-preview) · [Installation](#-installation) · [Configuration](#-configuration) · [Troubleshooting](#-troubleshooting)
 
 </div>
 
 ---
 
+> [!IMPORTANT]
+> **Under active preparation.** This repository's documentation is being prepared while the extension is updated. Check Releases and the compatibility notes before installing. Only features present in a published package are available.
+
 ## ✨ Features
 
-- 🎨 **Registration themes** — customize the supported registration page appearance.
-- 📱 **Responsive UI** — registration page and popup layouts for desktop and mobile.
-- 🪟 **Registration popup** — alternate registration flow where enabled.
-- 🛡️ **CAPTCHA options** — Cloudflare Turnstile and Google reCAPTCHA v2 (invisible), when supported by the installed release.
+- 🎨 **Theme controls** — customize the supported registration-page appearance.
+- 📱 **Responsive registration** — layouts designed for desktop and mobile.
+- 🪟 **Registration popup** — an alternate sign-up flow where enabled.
+- 🛡️ **CAPTCHA options** — Cloudflare Turnstile and Google reCAPTCHA v2 (invisible), subject to the installed release.
 - 🖼️ **Logo controls** — configure supported registration logo visibility.
-- 🔗 **Login integration** — convenient entry point to registration from the login page.
-- 🔔 **Update notifications** — GitHub release checks are planned; check the release notes for current availability.
+- 🔗 **Login integration** — an entry point to the registration flow from the login page.
+- 🔔 **Update notifications** — check release notes for current availability; the GitHub updater is planned.
 
-> **Note:** Only features included and documented in a published release should be considered available. CAPTCHA providers require correct keys and server-side verification.
+## 🖼️ Preview
 
-## 🖼️ Screenshots
+Real screenshots will be added after the updated extension has been published and verified.
 
-Screenshots will be added here after the updated extension UI is published and verified.
-
-<!--
-After adding real screenshots to the screenshots/ folder, uncomment and update these lines:
-![Registration page](screenshots/registration-page.png)
-![Registration popup](screenshots/registration-popup.png)
-![Extension settings](screenshots/extension-settings.png)
-![Mobile layout](screenshots/mobile-registration.png)
+<!-- Add actual screenshots to the screenshots/ directory, then uncomment:
+<p align="center">
+  <img src="screenshots/registration-page.png" alt="Registration page" width="48%">
+  <img src="screenshots/registration-popup.png" alt="Registration popup" width="48%">
+</p>
+<p align="center">
+  <img src="screenshots/extension-settings.png" alt="Extension settings" width="48%">
+  <img src="screenshots/mobile-registration.png" alt="Mobile registration" width="48%">
+</p>
 -->
 
 ## 📦 Installation
 
-**Recommended: install through the Pterodactyl Extensions interface.**
+**Recommended: use the panel's Extensions interface.**
 
-1. Open [GitHub Releases](https://github.com/pterodactyl-v2/Registration-Enhancer/releases) and download the `.pteroext` asset for the version you want.
-2. Sign in to your panel with an administrator account.
-3. Open **Admin → Extensions**.
-4. Upload/select the `.pteroext` package and follow the installation or replacement confirmation.
-5. Read the release notes, configure any required CAPTCHA settings, and test registration in a private browser window.
+1. Open [Releases](https://github.com/pterodactyl-v2/Registration-Enhancer/releases).
+2. Download the `.pteroext` asset for the desired version, if a verified release is available.
+3. Sign in to Pterodactyl with an administrator account.
+4. Navigate to **Admin → Extensions**.
+5. Upload the package and follow the installation or replacement prompts.
+6. Read the release notes, configure any required settings, and test registration in a private/incognito window.
 
-Back up your panel files and database before upgrading. Confirm that the release supports your exact Panel 2.0 build before installing.
+> [!CAUTION]
+> Back up your panel files and database before upgrading. Confirm that the release supports your exact Panel 2.0 build. Do not install packages from unofficial mirrors.
 
 ## ⚙️ Configuration
 
-Available settings depend on the installed extension version. Where provided, configure the registration page, popup, theme/logo options, and CAPTCHA provider in the extension settings.
+Available settings depend on the installed release. Use the extension's settings interface and follow the release notes for the supported options.
 
-### 🛡️ CAPTCHA providers
+### 🛡️ CAPTCHA
 
-- **Cloudflare Turnstile** — configure the site key and secret key from the Cloudflare dashboard.
-- **Google reCAPTCHA v2 (invisible)** — configure the matching site key and secret key from the Google reCAPTCHA admin console.
+| Provider | Setup |
+|---|---|
+| **Cloudflare Turnstile** | Configure the matching site key and secret key from the Cloudflare dashboard. |
+| **Google reCAPTCHA v2 (invisible)** | Configure the matching site key and secret key from the Google reCAPTCHA admin console. |
 
-Use the provider type and settings shown by your installed release. Keep secret keys private, and verify that server-side validation is enabled. Never put secret keys in screenshots, issues, or public source files.
+CAPTCHA availability depends on the published extension version. Keep secret keys private and ensure server-side verification is configured; displaying a widget alone is not sufficient protection.
 
-## 🧹 Cache clearing
+## 🧹 Clear cache
 
-After installing or upgrading, if changes do not appear, run these commands on the panel host. Adjust the PHP-FPM service name if your system uses a different PHP version.
+If changes do not appear after installation or an upgrade, run these commands on the panel host. Change `php8.4-fpm` if your PHP-FPM service uses a different version.
 
 ```bash
 cd /var/www/pterodactyl
@@ -73,25 +81,32 @@ systemctl restart php8.4-fpm
 systemctl restart nginx
 ```
 
-Then hard-refresh your browser with **Ctrl + Shift + R**. These commands clear Laravel's optimized caches and restart services; they do not repair an incompatible or failed extension installation.
+Then hard-refresh the browser with **Ctrl + Shift + R**. These commands clear Laravel's optimized caches and restart services; they cannot fix an incompatible package or failed installation.
 
 ## 🧩 Compatibility
 
 - **Target:** Pterodactyl Panel 2.0 extension system.
-- Check each release's notes for the supported panel build and requirements.
-- Panel 2.0 and its extension ecosystem may change; test upgrades on a staging instance when possible.
+- Check the specific release notes for supported panel builds and requirements.
+- Panel 2.0 and its extension ecosystem may evolve; test upgrades on a staging instance where possible.
 
-## 🐛 Support
+## 🛠️ Troubleshooting
 
-- [Open an issue](https://github.com/pterodactyl-v2/Registration-Enhancer/issues/new)
-- [Browse existing issues](https://github.com/pterodactyl-v2/Registration-Enhancer/issues)
-- [Download releases](https://github.com/pterodactyl-v2/Registration-Enhancer/releases)
+- **Changes not visible:** clear the panel cache, restart the relevant services, and hard-refresh the browser.
+- **Installation fails:** verify package integrity and panel-version compatibility; review the panel logs.
+- **CAPTCHA fails:** check the selected provider, matching keys, allowed hostnames, and server-side verification.
+- **Still stuck?** [Open an issue](https://github.com/pterodactyl-v2/Registration-Enhancer/issues/new) with sanitized logs and reproduction steps.
 
-Include the panel build, extension version, reproduction steps, and sanitized logs. **Never share passwords, API keys, CAPTCHA secrets, session cookies, or private user data.**
+Never publish passwords, API keys, CAPTCHA secrets, session cookies, or private user data in issues.
+
+## 🔗 Links
+
+- [📦 Releases](https://github.com/pterodactyl-v2/Registration-Enhancer/releases)
+- [🐛 Issues](https://github.com/pterodactyl-v2/Registration-Enhancer/issues)
+- [💡 Feature requests](https://github.com/pterodactyl-v2/Registration-Enhancer/issues/new)
 
 ## 📄 License
 
-A license has not yet been published. Until one is added, do not assume permission to reuse, redistribute, or modify the source.
+No license has been published yet. Until a license is added, do not assume permission to reuse, modify, or redistribute the source.
 
 <div align="center">
 
